@@ -4,7 +4,7 @@ pipeline {
         stage('Performance Testing') {
             steps {
                 echo 'Installing k6'
-                sh'set -ex'
+                sh'sudo -s'
 
                 sh 'sudo chmod +x setup_k6.sh'
                 sh 'sudo ./setup_k6.sh'
